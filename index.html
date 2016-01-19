@@ -5,8 +5,11 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />
     <link href="app.css" rel="stylesheet"/>
+      <script src="https://code.jquery.com/jquery-1.10.2.js" type="application/javascript"></script>
+    <script src="app.js" type="application/javascript"></script>
+    
 </head>
-    <body>
+    <body onload="onLoad();">
         <header class="container-fluid">
             <h1>Visit Anytown, USA!</h1> 
         </header>
@@ -24,6 +27,11 @@
 
     
 <section class="col-sm-6 col-sm-push-3">
+    
+        <input id="smallnumber" type="number">
+    <p id="numberMessage"></p>
+    <button onclick="checkNumber()">Submit</button>
+    
     <div class="row">
         <article>
         <h2>Amazing Museums</h2>
@@ -81,20 +89,24 @@
 </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6 col-sm-push-3"></div>
-        <div class="col-sm-6 col-sm-pull-3">
-            <a name="contact">Contact Us</a>
-            <p>Anytown Chamber of Commerce</p>
-            <p>123 Main St.</p>
-            <p>Anytown, OH 43210</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5">
+                <a name="contact">Contact Us</a>
+                <p>Anytown Chamber of Commerce</p>
+                <p>123 Main St.</p>
+                <p>Anytown, OH 43210</p>
+            </div>
+            <div class="col-sm-1">
+                <p id="badge"></p>
+            </div>
         </div>
     </div>
-</div>
     
     <footer class="container-fluid">
         Copyright 2016
+        <p id="timestamp"></p>
     </footer>
     
 </body>
