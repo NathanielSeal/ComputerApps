@@ -14,3 +14,16 @@ aside {
 #orderedlist {
     color: darkgreen;
 }
+nav {
+    background-color: #222;
+}
+
+section, article {
+    padding: 10px;
+    background-color: #eee;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
